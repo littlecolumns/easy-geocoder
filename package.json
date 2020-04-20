@@ -83,7 +83,8 @@
       },
       "electronPackagerConfig": {
         "icon": "assets/icons/icon",
-        "appCopyright": "Copyright 2020 Jonathan Soma, MIT License"
+        "appCopyright": "Copyright 2020 Jonathan Soma, MIT License",
+        "asar": true
       },
       "packagerConfig": {
         "icon": "assets/icons/icon",
