@@ -48,6 +48,12 @@
       label.click();
     }
   }
+
+  function clickUpload(event) {
+    const file = event.target.files[0];
+    sourceFile.set(file);
+    hovering = false;
+  }
 </script>
 
 <div
@@ -75,7 +81,7 @@
         <strong>Drag a CSV or Excel file</strong>
         or click to upload
       </label>
-      <input type="file" id="file-upload" />
+      <input type="file" id="file-upload" change="{clickUpload}" />
     {/if}
   </form>
 
