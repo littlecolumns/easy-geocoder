@@ -86,7 +86,8 @@
         "appCopyright": "Copyright 2020 Jonathan Soma, MIT License"
       },
       "packagerConfig": {
-        "icon": "assets/icons/icon"
+        "icon": "assets/icons/icon",
+        "executableName": "easy-geocoder"
       },
       "publishers": [
         {
