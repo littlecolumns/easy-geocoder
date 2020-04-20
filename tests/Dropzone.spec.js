@@ -11,7 +11,7 @@ it("Uploading a file changes the name", async () => {
   });
 
   let { getByText } = render(Dropzone);
-  expect(getByText("Drag a CSV")).toBeDefined();
+  expect(getByText("Drag a CSV or Excel file")).toBeDefined();
 
   await act(() => {
     sourceFile.set(file);

@@ -23,7 +23,8 @@
     "pure-electron-dev": "NODE_ENV=development electron .",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "test": "jest"
+    "test": "jest",
+    "publish": "electron-forge publish"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -33,6 +34,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.50",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
     "@electron-forge/maker-zip": "^6.0.0-beta.50",
+    "@electron-forge/publisher-github": "^6.0.0-beta.50",
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.0.0",
@@ -86,6 +88,17 @@
       "packagerConfig": {
         "icon": "assets/icons/icon"
       },
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "littlecolumns",
+              "name": "easy-geocoder"
+            }
+          }
+        }
+      ],
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
