@@ -1,0 +1,111 @@
+{
+  "name": "easy-geocoder",
+  "appId": "com.littlecolumns.easy-geocoder",
+  "author": "Jonathan Soma <jonathan.soma@gmail.com> (http://jonathansoma.com)",
+  "copyright": "Copyright © year ${author}",
+  "productName": "Easy Geocoder",
+  "homepage": "https://github.com/littlecolumns/easy-geocoder",
+  "license": "MIT",
+  "description": "A simple graphical interface to various geocoding APIs",
+  "version": "0.0.1",
+  "main": "./src/electron.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/littlecolumns/easy-geocoder.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "electron-forge start",
+    "electron": "run-s build pure-electron",
+    "pure-electron": "electron .",
+    "electron-dev": "run-p dev pure-electron-dev",
+    "pure-electron-dev": "NODE_ENV=development electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@electron-forge/cli": "^6.0.0-beta.50",
+    "@electron-forge/maker-deb": "^6.0.0-beta.50",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.50",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
+    "@electron-forge/maker-zip": "^6.0.0-beta.50",
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@surma/rollup-plugin-off-main-thread": "^1.4.1",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/svelte": "^3.0.0",
+    "babel-jest": "^25.3.0",
+    "chokidar": "^3.3.1",
+    "electron": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "jest": "^25.3.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "prettier-plugin-svelte": "^0.7.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "sirv-cli": "^0.4.5",
+    "svelte": "^3.0.0",
+    "svelte-jester": "^1.0.5"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "file-saver": "^2.0.2",
+    "node-geocoder": "^3.26.0",
+    "papaparse": "^5.1.1",
+    "xlsx": "^0.15.6"
+  },
+  "config": {
+    "forge": {
+      "github_repository": {
+        "owner": "littlecolumns",
+        "name": "easy-geocoder"
+      },
+      "electronPackagerConfig": {
+        "icon": "assets/icons/icon",
+        "appCopyright": "Copyright 2020 Jonathan Soma, MIT License"
+      },
+      "packagerConfig": {
+        "icon": "assets/icons/icon"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

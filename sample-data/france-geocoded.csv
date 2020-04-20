@@ -1,0 +1,5 @@
+address,latitude,longitude,geo_state,geo_city,geo_zipcode,geo_citycode,geo_countryCode,geo_country,geo_type,geo_id,geo_streetName,geo_streetNumber,geo_provider
+mkweflkmwefio23io23932,,,,,,,,,,,,,
+"52 RUE DES FLEURS, 33500 LIBOURNE, FRANCE",44.902985,-0.218352,"33, Gironde, Nouvelle-Aquitaine",Libourne,33500,33243,FR,France,housenumber,33243_1293_00052,Rue des Saules,52,opendatafrance
+"Chez Mireille COPEAU Apartment 3, Entrée A Bâtiment Jonquille, 25 RUE DE L EGLISE, CAUDOS, 33380 MIOS",44.59368,-0.950395,"33, Gironde, Nouvelle-Aquitaine",Mios,33380,33284,FR,France,housenumber,33284_0122_00025,Route du Petit Caudos,25,opendatafrance
+29 champs elysée paris,48.866163,2.31236,"75, Paris, Île-de-France",Paris,75008,75108,FR,France,locality,75108_s080,Metro Champs Elysees,,opendatafrance
