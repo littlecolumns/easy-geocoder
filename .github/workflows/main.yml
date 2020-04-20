@@ -23,6 +23,7 @@ jobs:
         uses: jsoma/action-electron-forge@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEBUG: electron-forge:*
         with:
           # GitHub token, automatically provided to the action
           # (No need to define this secret in the repo settings)
