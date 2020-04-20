@@ -53,6 +53,8 @@ function createWindow() {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on("ready", async () => {
+  if (require("electron-squirrel-startup")) return app.quit();
+
   createWindow();
   setAbout();
 });

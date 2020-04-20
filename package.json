@@ -104,7 +104,9 @@
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
-          "config": {}
+          "config": {
+            "exe": "easy-geocoder.exe"
+          }
         },
         {
           "name": "@electron-forge/maker-zip",
