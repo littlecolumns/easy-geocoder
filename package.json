@@ -73,7 +73,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "file-saver": "^2.0.2",
     "node-geocoder": "^3.26.0",
-    "papaparse": "^5.1.1",
+    "papaparse": "^5.2.0",
     "xlsx": "^0.15.6"
   },
   "config": {
