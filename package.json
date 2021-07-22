@@ -74,7 +74,7 @@
     "file-saver": "^2.0.2",
     "node-geocoder": "^3.26.0",
     "papaparse": "^5.1.1",
-    "xlsx": "^0.15.6"
+    "xlsx": "^0.17.0"
   },
   "config": {
     "forge": {
